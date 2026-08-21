@@ -1,0 +1,643 @@
+/* ============================================================
+   DAYEHS PERFECT BALANCE: ORIGINAL LAYOUT + MODERN POLISH
+   ============================================================ */
+
+/* Global Typography & Reset */
+:root {
+  --primary-brand: #00715D;
+  --accent-brand: #F65024;
+  --dark-navy: #1C2438;
+  --card-bg: #FFFFFF;
+  --text-dark: #1E293B;
+  --text-muted: #64748B;
+}
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+  color: var(--text-dark);
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Permanently disable full-screen preloader overlays site-wide */
+.loader-wrap,
+.preloader,
+.handle-preloader {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  height: 0 !important;
+  width: 0 !important;
+}
+
+/* Fix anchor tag display font issue */
+a {
+  font-family: 'Poppins', sans-serif !important;
+  transition: all 0.3s ease;
+}
+
+p {
+  font-family: 'Poppins', sans-serif !important;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+h1, h2, h3 {
+  font-family: 'Yeseva One', serif !important;
+}
+
+h4, h5, h6 {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 700;
+}
+
+/* ============================================================
+   HEADER & TOP BAR (BALANCED ORIGINAL LAYOUT)
+   ============================================================ */
+
+.header_top {
+  background: #25283A !important;
+  padding: 12px 0 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.header_top .auto_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_top .header_top_left .top_left {
+  display: flex;
+  align-items: center;
+  gap: 35px !important;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header_top .header_top_left .top_left li {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.header_top .header_top_left .top_left li a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+}
+
+.header_top .header_top_left .top_left li a:hover {
+  color: var(--accent-brand);
+}
+
+.header_top .header_top_left .top_left li i {
+  color: var(--accent-brand);
+  font-size: 16px;
+}
+
+.header_top_right .social-links ul {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header_top_right .social-links ul li a {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.85);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.header_top_right .social-links ul li a:hover {
+  color: var(--accent-brand);
+  transform: translateY(-2px);
+}
+
+/* Header Bottom Nav Bar */
+.header_bottom {
+  background: #ffffff !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  position: relative;
+  z-index: 99;
+}
+
+/* Restored & Refined Original Logo Shape Accent */
+.main-header.style-one .logo__shape {
+  display: block !important;
+  width: calc(50% - 390px);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 113, 93, 0.12) !important;
+  z-index: 1;
+}
+
+.main-header.style-one .logo__shape:after {
+  content: "";
+  width: 41px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -38px;
+  background-image: url(../images/shape/logo-shape.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+
+.header_bottom .outer-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.logo-box figure.logo {
+  margin: 0;
+  display: inline-block;
+}
+
+.logo-box figure.logo img {
+  max-height: 55px;
+  width: auto;
+  object-fit: contain;
+}
+
+.main-menu .navigation > li > a {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  color: #1C2438 !important;
+  padding: 24px 18px !important;
+  transition: all 0.3s ease !important;
+}
+
+.main-menu .navigation > li:hover > a,
+.main-menu .navigation > li.current > a {
+  color: var(--primary-brand) !important;
+}
+
+/* Original Style Support Button with Modern Glow */
+.header-link-btn .btn-1 {
+  background: var(--accent-brand) !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  padding: 12px 28px !important;
+  border-radius: 4px !important;
+  box-shadow: 0 4px 15px rgba(246, 80, 36, 0.3) !important;
+  transition: all 0.3s ease !important;
+  text-transform: uppercase;
+  font-size: 13px !important;
+  letter-spacing: 0.5px;
+  display: inline-block;
+}
+
+.header-link-btn .btn-1:hover {
+  background: var(--primary-brand) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 113, 93, 0.4) !important;
+}
+
+/* ============================================================
+   HERO BANNER (BALANCED ORIGINAL ARCHED LAYOUT + CLEAN CONTRAST)
+   ============================================================ */
+
+.banner {
+  position: relative;
+  background: #1C2438 !important;
+  padding: 80px 0 90px 0 !important;
+  min-height: 580px;
+}
+
+.banner .container {
+  position: relative;
+  z-index: 2;
+}
+
+.banner-content-wrapper-inner h4 {
+  font-family: 'Caveat', cursive !important;
+  font-size: 36px !important;
+  color: var(--accent-brand) !important;
+  margin-bottom: 10px !important;
+  font-weight: 700 !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.banner-content-wrapper-inner h2 {
+  font-family: 'Yeseva One', serif !important;
+  font-weight: 400 !important;
+  font-size: 56px !important;
+  line-height: 1.2 !important;
+  color: #ffffff !important;
+  margin-bottom: 20px !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.banner-content-wrapper-inner p {
+  font-size: 18px !important;
+  line-height: 1.7 !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  max-width: 540px;
+  margin-bottom: 35px !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.banner-content-wrapper-inner .btn-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Arched Image Container (Preserving Signature Arched Frame) */
+.banner-right-content {
+  position: relative;
+  height: 520px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.banner-right-image {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  height: 480px;
+  border-radius: 210px 210px 0px 0px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  opacity: 1 !important;
+  transform: none !important;
+  z-index: 2;
+}
+
+.banner-right-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 210px 210px 0px 0px;
+}
+
+.border-image {
+  position: absolute;
+  bottom: 0;
+  width: 440px;
+  height: 495px;
+  opacity: 0.8 !important;
+  transform: none !important;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.border-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ============================================================
+   INNER PAGES & CARDS (BALANCED POLISH)
+   ============================================================ */
+
+.common-banner {
+  position: relative;
+  background: linear-gradient(135deg, rgba(28, 36, 56, 0.88) 0%, rgba(0, 113, 93, 0.82) 100%), 
+              url('../images/banner/common-banner-bg2.jpeg') center/cover no-repeat !important;
+  padding: 85px 0 !important;
+  text-align: center;
+}
+
+.common-banner-title h3 {
+  font-family: 'Yeseva One', serif !important;
+  font-size: 44px !important;
+  color: #ffffff !important;
+  margin-bottom: 10px !important;
+}
+
+.common-banner-title {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 16px;
+}
+
+.common-banner-title a {
+  color: #38BDF8 !important;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Cards & Hover Polish */
+.service-block-one .inner-box,
+.causes-block-one .inner-box,
+.team-block-one .inner-box,
+.contact-containt,
+.donate-card {
+  background: #ffffff !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.3s ease !important;
+}
+
+.service-block-one .inner-box:hover,
+.causes-block-one .inner-box:hover,
+.team-block-one .inner-box:hover,
+.contact-containt:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Footer Styling */
+.main-footer {
+  background: #1C2438 !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  padding-top: 70px !important;
+}
+
+.footer_widget .widget_title h4 {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.footer_widget .links_list li a {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-size: 15px !important;
+  transition: all 0.3s ease !important;
+}
+
+.footer_widget .links_list li a:hover {
+  color: var(--accent-brand) !important;
+}
+
+.footer_bottom {
+  background: #151B2A !important;
+  padding: 18px 0 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer_bottom .copyright p {
+  color: rgba(255, 255, 255, 0.6) !important;
+  font-size: 14px;
+}
+
+/* ============================================================
+   WHY DAYEHS?, OUR BELIEFS & MISSION OBJECTIVES (MODERN DESIGN)
+   ============================================================ */
+
+.dayehs-why-section {
+  padding: 85px 0;
+  background: #F8FAFC;
+  position: relative;
+}
+
+.dayehs-why-box {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 45px 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 113, 93, 0.12);
+  margin-bottom: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.dayehs-why-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--primary-brand), var(--accent-brand));
+}
+
+.dayehs-why-box h3 {
+  font-size: 34px !important;
+  color: var(--text-dark) !important;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.dayehs-why-box h3 i {
+  color: var(--accent-brand);
+}
+
+.dayehs-why-box p {
+  font-size: 16.5px;
+  line-height: 1.8;
+  color: #475569;
+  margin-bottom: 18px;
+}
+
+.dayehs-why-box p:last-child {
+  margin-bottom: 0;
+}
+
+/* OUR BELIEFS GRID */
+.beliefs-header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.beliefs-header h5 {
+  color: var(--accent-brand);
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.beliefs-header h3 {
+  font-size: 36px;
+  color: var(--text-dark);
+}
+
+.beliefs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  margin-bottom: 65px;
+}
+
+.belief-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px 28px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+  border: 1.5px solid #E2E8F0;
+  transition: all 0.35s ease;
+  height: 100%;
+}
+
+.belief-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary-brand);
+  box-shadow: 0 15px 35px rgba(0, 113, 93, 0.12);
+}
+
+.belief-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: rgba(0, 113, 93, 0.08);
+  color: var(--primary-brand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.belief-card:hover .belief-icon {
+  background: var(--primary-brand);
+  color: #ffffff;
+}
+
+.belief-card h5 {
+  font-size: 19px !important;
+  color: var(--text-dark) !important;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.belief-card p {
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: #64748B;
+  margin: 0;
+}
+
+/* MISSION & OBJECTIVES GRID */
+.objectives-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 45px auto;
+}
+
+.objectives-header h5 {
+  color: var(--accent-brand);
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.objectives-header h3 {
+  font-size: 36px;
+  color: var(--text-dark);
+  margin-bottom: 15px;
+}
+
+.objectives-header p {
+  font-size: 15.5px;
+  color: #64748B;
+  line-height: 1.7;
+}
+
+.objectives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 25px;
+}
+
+.objective-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px 25px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+  border: 1px solid #E2E8F0;
+  transition: all 0.35s ease;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.objective-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(246, 80, 36, 0.12);
+  border-color: var(--accent-brand);
+}
+
+.objective-number {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-brand), #E03E12);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(246, 80, 36, 0.3);
+}
+
+.objective-content h5 {
+  font-size: 18px !important;
+  color: var(--text-dark) !important;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.objective-content p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #64748B;
+  margin: 0;
+}
+
+.objectives-footer-quote {
+  margin-top: 50px;
+  background: linear-gradient(135deg, #1C2438 0%, #25283A 100%);
+  border-radius: 16px;
+  padding: 35px 40px;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.objectives-footer-quote p {
+  color: rgba(255, 255, 255, 0.92) !important;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.objectives-footer-quote .quote-btn {
+  display: inline-block;
+  background: var(--accent-brand);
+  color: #ffffff !important;
+  font-weight: 700;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 13.5px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 6px 20px rgba(246, 80, 36, 0.4);
+  transition: all 0.3s ease;
+}
+
+.objectives-footer-quote .quote-btn:hover {
+  background: var(--primary-brand);
+  transform: translateY(-2px);
+}
+
